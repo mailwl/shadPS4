@@ -8,6 +8,7 @@
 #include "core/libraries/audio/audioout.h"
 #include "core/libraries/audio3d/audio3d.h"
 #include "core/libraries/avplayer/avplayer.h"
+#include "core/libraries/camera/camera.h"
 #include "core/libraries/disc_map/disc_map.h"
 #include "core/libraries/game_live_streaming/gamelivestreaming.h"
 #include "core/libraries/gnmdriver/gnmdriver.h"
@@ -91,6 +92,7 @@ void InitHLELibs(Core::Loader::SymbolsResolver* sym) {
     Libraries::Remoteplay::RegisterlibSceRemoteplay(sym);
     Libraries::Videodec::RegisterlibSceVideodec(sym);
     Libraries::RazorCpu::RegisterlibSceRazorCpu(sym);
+    Libraries::Camera::RegisterlibSceCamera(sym);
 }
 
 } // namespace Libraries
